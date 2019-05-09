@@ -1,3 +1,4 @@
+console.log('Loaded');
 // Exercise 1: Create dictionary from Array Vehicle Data
 // https://gist.githubusercontent.com/scottburton11/66a921c458f9500a773a6b0ac65006df/raw/629bfd6a3125e3428bd85a53231bd8018c407a65/Javascript%2520Working%2520With%2520Data%2520Challenge%2520data
 var vehiclesData = "https://gist.githubusercontent.com/scottburton11/66a921c458f9500a773a6b0ac65006df/raw/629bfd6a3125e3428bd85a53231bd8018c407a65/Javascript%2520Working%2520With%2520Data%2520Challenge%2520data";
@@ -63,12 +64,16 @@ function renderCoolCars(data) {
     // Set response data array to vehicles variable
         let vehicles = data
         // console.log(vehicles)
-    //   Filter
+    //   Filter vehicles list by cool factors scoring between 4 and 7
         let coolCars = vehicles.filter(function(c) {
             return (c["Cool Factor"] > 4) && (c["Cool Factor"] < 7)
         });
-        // // $('#topTenCoolCars').text(coolCars);
+        // console.log(coolCars);
+        coolCars.sort(function(a, b) {
+          return b["Total Score"]-a["Total Score"]
+        });
         console.log(coolCars);
+
         // let topTenCoolCars = coolCars.filter(function(tt) {
         //   return (tt["Total Score"])
         // })
