@@ -79,6 +79,3 @@ function renderCoolCars(data) {
         // })
    
     }
-    
-
-
