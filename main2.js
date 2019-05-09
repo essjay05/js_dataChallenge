@@ -22,10 +22,9 @@ function renderHTML(data) {
     // Set response data array to vehicles variable
         let vehicles = data
         console.log(vehicles)
-    //   Create dictionary from vehicles array using reduce
-        var dictionary = vehicles.reduce(function(map, obj) {
-            map[obj.id] = obj;
-            return map;
+    //   Filter
+        let coolCars = vehicles.filter(function(c) {
+            return true;
         }, {});
         console.log(dictionary);
     
