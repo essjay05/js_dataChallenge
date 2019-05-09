@@ -1,5 +1,28 @@
 .container {
     display: flex;
-    /* flex-direction: column; */
-    justify-items: space-around;
+    flex-direction: column;
+    justify-items: space-between;
 }
+.exercise {
+    margin: 1.5rem;
+    border: .5px solid grey;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: #48dbfb;
+    padding: 1rem;
+}
+nav a {
+    margin: 0px 5rem;
+    color: #222f3e;
+}
+header {
+    text-align: center;
+    padding: 2rem 0px;
+    background-color: #0abde3;
+}
+
